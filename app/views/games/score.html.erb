@@ -1,0 +1,13 @@
+<%# <h1>Your Score</h1>
+<%= @score %>
+<%# <%= link_to "Play again", new_path %>
+
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="score-container">
+      <h1>Your Score</h1>
+      <div class="score"><%= @score %></div>
+      <div class="play-again-btn">
+        <%= link_to "Play again", new_path, class: "btn btn-primary btn-lg" %>
+      </div>
+    </div>
+  </div>
